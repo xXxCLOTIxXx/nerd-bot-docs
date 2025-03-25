@@ -1,5 +1,5 @@
 function loadContent(lang) {
-    fetch(`/${lang}/index.html`)
+    fetch(`${lang}/index.html`)
         .then(response => response.text())
         .then(data => {
             document.getElementById('content').innerHTML = data;
